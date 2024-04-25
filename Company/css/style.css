@@ -227,6 +227,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hb_logo img {
     display: inline-block;
+    height: 42px;
 }
 .hb_header_right_links {
     width: auto;
