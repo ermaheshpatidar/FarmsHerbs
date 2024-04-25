@@ -22,8 +22,8 @@
     <link href="css/fonts.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
 	<link href="js/plugins/owl/owl.carousel.css" rel="stylesheet" type="text/css">
-	<link href="js/plugins/jquery_ui/jquery-ui.css" rel="stylesheet" type="text/css">
 	<link href="js/plugins/magnific_popup/magnific-popup.css" rel="stylesheet" type="text/css">
+	<link href="js/plugins/jquery_ui/jquery-ui.css" rel="stylesheet" type="text/css">
 	<link href="js/plugins/revolution/css/settings.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <!-- end theme style -->
@@ -127,7 +127,7 @@
 							<ul class="my_navbar">
 								<li ><a href="index.html">Home</a></li>
 								<li><a href="about.html">about</a></li>
-								<li><a href="#">shop
+								<li class="active"><a href="#">shop
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" width="12px" height="12px">
 										  <g>
 											<path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z" fill="#FFFFFF"/>
@@ -141,7 +141,7 @@
 										<li><a href="checkout.html">checkout</a></li>
 									</ul>
 								</li>
-								<li class="active"><a href="#">blog
+								<li><a href="#">blog
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" width="12px" height="12px">
 										  <g>
 											<path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z" fill="#FFFFFF"/>
@@ -250,207 +250,106 @@
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay="1s">
 				<div class="hb_pageheading">
-					<h3>Blog</h3>
+					<h3>cart</h3>
 					<ol class="breadcrumb">
 						<li><a href="index.html">Home</a></li>
-						<li class="active">blog</li>
+						<li class="active">cart</li>
 					</ol>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="hb_white_wrapper hb_blog hb_toppadder80 hb_bottompadder42">
+<div class="hb_white_wrapper hp_cart hb_toppadder75">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 col-lg-push-3 col-md-push-3">
-				<div class="hb_blog_div wow fadeInUp">
-					<div class="hb_blog_img">
-						<img src="images/blog_medium1.jpg" class="img-responsive" alt="image">
-						<div class="hb_img_overlay"></div>
-						<div class="hb_overlay_icon">
-							<a href="images/blog_big1.jpg" class="zoom_icon"><i class="flaticon-search-2"></i></a>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="woocommerce wow fadeInUp">
+					<div class="table-responsive">
+						<table class="shop_table shop_table_responsive cart">
+							<tr>
+								<th>Product</th>
+								<th>Name</th>
+								<th>Price</th>
+								<th>quantity</th>
+								<th>Total</th>
+								<th>Remove</th>
+							</tr>
+							<tr>
+								<td>
+									<span><img src="images/cart_page1.jpg" class="img-responsive" alt="image"></span>
+								</td>
+								<td>
+									<p><a href="shop_single.html">Keemun Tea</a></p>
+								</td>
+								<td>
+									<p>$15</p>
+								</td>
+								<td>
+									<div class="hb_quantity">
+										<input type="number" min="0" class="hb_input" placeholder="Quantity">
+									</div>
+								</td>
+								<td>
+									<p>$75</p>
+								</td>
+								<td>
+									<span><a href="#" class="hb_closebtn"><i class="fa fa-times"></i></a></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span><img src="images/cart_page2.jpg" class="img-responsive" alt="image"></span>
+								</td>
+								<td>
+									<p><a href="shop_single.html">Black Tea</a></p>
+								</td>
+								<td>
+									<p>$15</p>
+								</td>
+								<td>
+									<div class="hb_quantity">
+										<input type="number" min="0" class="hb_input" placeholder="Quantity">
+									</div>
+								</td>
+								<td>
+									<p>$75</p>
+								</td>
+								<td>
+									<span><a href="#" class="hb_closebtn"><i class="fa fa-times"></i></a></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 wow fadeInLeft">
+						<div class="coupon">
+							<h3>Coupon Code</h3>
+							<input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Coupon code"> <input type="submit" class="button hb_coupon_btn" name="apply_coupon" value="Apply">
 						</div>
 					</div>
-					<div class="hb_blog_content">
-						
-						<div class="clearfix"></div>
-						<h3><a href="blog_single.html">At vero eos et accusamus et</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque diam finibus augue pretium.Quisque nec elit commodo, dictum tortor a, blandit lectus. Aenean rutrum egestas nisl, ut dignissim lectus maximus quis. Sed lacus felis, malesuada vel aliquam imperdiet, luctus sed felis. Nulla facilisi. Fusce efficitur finibus odio sed efficitur. Mauris pretium elit velit, sed suscipit tellus mattis id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo vestibulum fermentum.</p>
-						<div class="hb_authorname">Peter Parker</div>
-						<div class="hb_custom_links">
-							<ul>
-								<li><a href="#"><i class="flaticon-favorite-heart-button"></i>24</a></li>
-								<li><a href="#"><i class="flaticon-eye"></i>51</a></li>
-								<li><a href="#"><i class="flaticon-speech-bubbles-comment-option"></i>04</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="hb_blog_div wow fadeInUp">
-					<div class="hb_blog_img">
-						<img src="images/blog_medium2.jpg" class="img-responsive" alt="image">
-						<div class="hb_img_overlay"></div>
-						<div class="hb_overlay_icon">
-							<a href="images/blog_big2.jpg" class="zoom_icon"><i class="flaticon-search-2"></i></a>
-						</div>
-					</div>
-					<div class="hb_blog_content">
-						
-						<div class="clearfix"></div>
-						<h3><a href="blog_single.html">Et harum quidem rerum facilis</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque diam finibus augue pretium.Quisque nec elit commodo, dictum tortor a, blandit lectus. Aenean rutrum egestas nisl, ut dignissim lectus maximus quis. Sed lacus felis, malesuada vel aliquam imperdiet, luctus sed felis. Nulla facilisi. Fusce efficitur finibus odio sed efficitur. Mauris pretium elit velit, sed suscipit tellus mattis id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo vestibulum fermentum.</p>
-						<div class="hb_authorname">Peter Parker</div>
-						<div class="hb_custom_links">
-							<ul>
-								<li><a href="#"><i class="flaticon-favorite-heart-button"></i>24</a></li>
-								<li><a href="#"><i class="flaticon-eye"></i>51</a></li>
-								<li><a href="#"><i class="flaticon-speech-bubbles-comment-option"></i>04</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="hb_blog_div wow fadeInUp">
-					<div class="hb_blog_img">
-						<img src="images/blog_medium3.jpg" class="img-responsive" alt="image">
-						<div class="hb_img_overlay"></div>
-						<div class="hb_overlay_icon">
-							<a href="images/blog_big3.jpg" class="zoom_icon"><i class="flaticon-search-2"></i></a>
-						</div>	
-					</div>
-					<div class="hb_blog_content">
-						
-						<div class="clearfix"></div>
-						<h3><a href="blog_single.html">Nam libero tempore cum</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque diam finibus augue pretium.Quisque nec elit commodo, dictum tortor a, blandit lectus. Aenean rutrum egestas nisl, ut dignissim lectus maximus quis. Sed lacus felis, malesuada vel aliquam imperdiet, luctus sed felis. Nulla facilisi. Fusce efficitur finibus odio sed efficitur. Mauris pretium elit velit, sed suscipit tellus mattis id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo vestibulum fermentum.</p>
-						<div class="hb_authorname">Peter Parker</div>
-						<div class="hb_custom_links">
-							<ul>
-								<li><a href="#"><i class="flaticon-favorite-heart-button"></i>24</a></li>
-								<li><a href="#"><i class="flaticon-eye"></i>51</a></li>
-								<li><a href="#"><i class="flaticon-speech-bubbles-comment-option"></i>04</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="hb_pagination blog_pagination wow fadeInLeft">
-							<nav aria-label="Page navigation">
-								<ul class="pagination">
-									<li><a href="#" aria-label="Next"><i class="fa fa-angle-left"></i></a></li>
-									<li><a href="#" class="active">1</a></li>
-									<li><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
-									<li><a href="#" aria-label="Next"><i class="fa fa-angle-right"></i></a></li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-pull-9 col-md-pull-9">
-				<div class="hb_sidebar">
-					<div class="widget widget_categories wow fadeInUp">
-						<h3 class="widget-title">Categories</h3>
-						<ul>
-							<li><a href="#">Herbal Tea <span>40</span></a></li>
-							<li><a href="#">Herbal Medicine <span>22</span></a></li>
-							<li><a href="#">Herbal Oil <span>65</span></a></li>
-							<li><a href="#">Organic Tea <span>07</span></a></li>
-							<li><a href="#">Organic Oil <span>13</span></a></li>
-						</ul>
-					</div>
-					<div class="widget widget_recentpost wow fadeInUp">
-						<h3 class="widget-title">Recent posts</h3>
-						<ul>
-							<li>
-								<div class="hb_post_img">
-									<img src="images/recent_post1.jpg" class="img-responsive" alt="image">
-									<div class="hb_img_overlay"></div>
+					<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 pull-right wow fadeInRight">
+						<div class="cart_totals">
+							<div class="cart_total_inner">
+								<h2>cart total</h2>
+								<table class="shop_table shop_table_responsive">
+									<tr class="cart-subtotal">
+										<th>Sub total</th>
+										<td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>150.00</span></td>
+									</tr>
+									<tr class="cart-lessamount">
+										<th>Less Discounts</th>
+										<td data-title="Less_Discount"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">- $</span>50.00</span></td>
+									</tr>
+									<tr class="order-total">
+										<th>Total</th>
+										<td data-title="Total"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>100.00</span></td>
+									</tr>
+								</table>
+								<div class="wc-proceed-to-checkout">
+									<a href="checkout.html" class="checkout-button hb_btn">Proceed to Checkout</a>
 								</div>
-								<div class="hb_post_data">
-									<h3><a href="#">Donec gravida risus ut ex efficitur</a></h3>
-									<span><i class="flaticon-counterclockwise"></i>8 Hours Ago</span>
-								</div>
-							</li>
-							<li>
-								<div class="hb_post_img">
-									<img src="images/recent_post2.jpg" class="img-responsive" alt="image">
-									<div class="hb_img_overlay"></div>
-								</div>
-								<div class="hb_post_data">
-									<h3><a href="#">Donec gravida risus ut ex efficitur</a></h3>
-									<span><i class="flaticon-counterclockwise"></i>8 Hours Ago</span>
-								</div>
-							</li>
-							<li>
-								<div class="hb_post_img">
-									<img src="images/recent_post3.jpg" class="img-responsive" alt="image">
-									<div class="hb_img_overlay"></div>
-								</div>
-								<div class="hb_post_data">
-									<h3><a href="#">Donec gravida risus ut ex efficitur</a></h3>
-									<span><i class="flaticon-counterclockwise"></i>8 Hours Ago</span>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="widget widget_gallery wow fadeInUp">
-						<h3 class="widget-title">Recent posts</h3>
-						<ul>
-							<li>
-								<a href="#">
-									<img src="images/footer_gallery1.jpg" class="img-responsive" alt="image">
-									<div class="hb_img_overlay"></div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="images/footer_gallery2.jpg" class="img-responsive" alt="image">
-									<div class="hb_img_overlay"></div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="images/footer_gallery3.jpg" class="img-responsive" alt="image">
-									<div class="hb_img_overlay"></div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="images/footer_gallery4.jpg" class="img-responsive" alt="image">
-									<div class="hb_img_overlay"></div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="images/footer_gallery5.jpg" class="img-responsive" alt="image">
-									<div class="hb_img_overlay"></div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="images/footer_gallery6.jpg" class="img-responsive" alt="image">
-									<div class="hb_img_overlay"></div>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="widget widget_tag_cloud wow fadeInUp">
-						<h3 class="widget-title">tags</h3>
-						<div class="tagcloud">
-							<a href="#">Accessories</a>
-							<a href="#">Green Tea</a>
-							<a href="#">Fat Loss</a>
-							<a href="#">Organic Products</a>
-							<a href="#">Black</a>
-							<a href="#">Healing</a>
+							</div>
 						</div>
-					</div>
-					<div class="widget widget_text wow fadeInUp">
-						<h3 class="widget-title">Text Widget</h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					</div>
 				</div>
 			</div>
@@ -466,10 +365,10 @@
 					<p>Etiam blandit velit at mauriseat venenatis, quis tempus exproture euismod. Vivamus molestie, risus at commodo gravida.</p>
 					<div class="hb_social_icon">
 						<ul>
-							<li><a href="#" class="wow fadeIn" data-wow-delay="0.8s" ><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="wow fadeIn" data-wow-delay="1s"   ><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" class="wow fadeIn" data-wow-delay="1.2s" ><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#" class="wow fadeIn" data-wow-delay="1.4s" ><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="wow fadeIn" data-wow-delay="0.8s"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="wow fadeIn" data-wow-delay="1s"  ><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" class="wow fadeIn" data-wow-delay="1.2s"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#" class="wow fadeIn" data-wow-delay="1.4s"><i class="fa fa-linkedin"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -559,6 +458,7 @@
 <script src="js/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
 <script src="js/plugins/revolution/js/revolution.extension.actions.min.js"></script>
 <script src="js/plugins/revolution/js/revolution.extension.layeranimation.min.js"></script>
+<script src="js/plugins/revolution/js/revolution.extension.navigation.min.js"></script>
 <script src="js/plugins/revolution/js/revolution.extension.parallax.min.js"></script>
 <script src="js/plugins/revolution/js/revolution.extension.slideanims.min.js"></script>
 <script src="js/wow.min.js"></script>
