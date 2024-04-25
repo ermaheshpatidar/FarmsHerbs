@@ -4033,7 +4033,7 @@ ul.hb_rev_slider, ul.hb_rev_slider li {
     position: absolute;
     content: "";
     height: 30px;
-    width: 1px;
+    width: 0px;
     background: #ffffff45;
     top: 0;
     left: 0;
